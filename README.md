@@ -3,7 +3,24 @@ Advanced Database topics.
 - reading and writing with ORM library
 - manipulating DB from Terminal
 
+## GreenDAO library 
+
+
+### What is ORM?
+
+Object-Relational Mapping (ORM) is a technique that lets you query and manipulate data from a database using an object-oriented paradigm. When talking about ORM, most people are referring to a library that implements the Object-Relational Mapping technique, hence the phrase "an ORM".
+
+An ORM library is a completely ordinary library written in your language of choice that encapsulates the code needed to manipulate the data, so you don't use SQL anymore; you interact directly with an object in the same language you're using.
+
+For the full story and a good example read [this SOF answer](https://stackoverflow.com/a/1279678/2956283)
+
+
+
 ## Terminal DB manipulation
+
+When working with DB on android we need a quick and efficient way to read the DB, validate insertions and generally, overview the tables and db structure. For this purpose it is prefered to use a command line interface way. 
+
+We'll use the Android Debugging Bridge tool. First of all we need to add the folder that adb exists in the PATH variable to be able to call it from the CMD. [Read this for more info about this process](https://stackoverflow.com/questions/20564514/adb-is-not-recognized-as-an-internal-or-external-command-operable-program-or)
 
 SQLite DB can be administered from the Android Studio Terminal. Some useful commands follow:
 
@@ -22,8 +39,4 @@ now type ```sqlite3 database-file-name.db``` to connect to the specified databas
 
 type: ```.schema``` to get a list of the tables. You can start typing normal SQL commands to create your own tables or query the existing ones
 
-
-## What is ORM?
-
- “Object-relational mapping (ORM) is a programming technique in which a metadata descriptor is used to connect object code to a relational database. Object code is written in object-oriented programming (OOP) languages such as Java or C#. ORM converts data between type systems that are unable to coexist within relational databases and OOP languages.”
 
