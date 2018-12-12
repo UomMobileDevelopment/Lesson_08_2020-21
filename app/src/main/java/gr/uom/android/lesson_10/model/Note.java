@@ -22,16 +22,19 @@ public class Note {
     private String comment;
     private Date date;
 
+    private long studentId;
+
     @Convert(converter = NoteTypeConverter.class, columnType = String.class)
     private NoteType type;
 
-    @Generated(hash = 59778150)
+    @Generated(hash = 136628276)
     public Note(Long id, @NotNull String text, String comment, Date date,
-            NoteType type) {
+            long studentId, NoteType type) {
         this.id = id;
         this.text = text;
         this.comment = comment;
         this.date = date;
+        this.studentId = studentId;
         this.type = type;
     }
 
@@ -72,5 +75,13 @@ public class Note {
 
     public void setType(NoteType type) {
         this.type = type;
+    }
+
+    public long getStudentId() {
+        return this.studentId;
+    }
+
+    public void setStudentId(long studentId) {
+        this.studentId = studentId;
     }
 }

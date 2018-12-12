@@ -25,6 +25,8 @@ import gr.uom.android.lesson_10.model.DaoSession;
 import gr.uom.android.lesson_10.model.Note;
 import gr.uom.android.lesson_10.model.NoteDao;
 import gr.uom.android.lesson_10.model.NoteType;
+import gr.uom.android.lesson_10.model.Student;
+import gr.uom.android.lesson_10.model.StudentDao;
 
 public class NoteActivity extends AppCompatActivity {
 
@@ -47,6 +49,32 @@ public class NoteActivity extends AppCompatActivity {
         // get the note DAO
         DaoSession daoSession = ((App) getApplication()).getDaoSession();
         noteDao = daoSession.getNoteDao();
+
+        StudentDao studentDao = daoSession.getStudentDao();
+
+        Student teoStudent = studentDao.queryBuilder()
+                .where(StudentDao.Properties.Name.eq("Theodore"))
+                .list().get(0);
+
+        List<Note> noteList = noteDao.queryBuilder()
+                .where(NoteDao.Properties.Text.like("%Note"))
+                .list();
+
+     //   teoStudent.setNotes(noteList);
+
+        for(Note note : noteList){
+            note.setStudentId(teoStudent.getId());
+            noteDao.save(note);
+        }
+
+        List<Note> teoNotes = teoStudent.getNotes();
+
+        Log.d("TEO", "Teo Notes: ");
+
+       for(Note n : teoNotes){
+           Log.d("TEO", n.getText());
+       }
+
 
         // query all notes, sorted a-z by their text
         notesQuery = noteDao.queryBuilder().orderAsc(NoteDao.Properties.Text).build();
