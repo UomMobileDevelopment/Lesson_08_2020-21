@@ -1,5 +1,5 @@
 
-package gr.uom.android.lesson_10.model;
+package gr.uom.android.db_orm.model;
 
 public enum NoteType {
     TEXT, LIST, PICTURE

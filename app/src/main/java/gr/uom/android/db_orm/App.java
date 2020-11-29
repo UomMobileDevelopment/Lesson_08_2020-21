@@ -1,11 +1,11 @@
-package gr.uom.android.lesson_10;
+package gr.uom.android.db_orm;
 
 import android.app.Application;
 
 import org.greenrobot.greendao.database.Database;
 
-import gr.uom.android.lesson_10.model.DaoMaster;
-import gr.uom.android.lesson_10.model.DaoSession;
+import gr.uom.android.db_orm.model.DaoMaster;
+import gr.uom.android.db_orm.model.DaoSession;
 
 public class App extends Application {
 

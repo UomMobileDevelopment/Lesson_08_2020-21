@@ -1,4 +1,4 @@
-package gr.uom.android.lesson_10;
+package gr.uom.android.db_orm;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

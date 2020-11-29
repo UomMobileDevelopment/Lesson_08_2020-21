@@ -1,4 +1,4 @@
-package gr.uom.android.lesson_10.model;
+package gr.uom.android.db_orm.model;
 
 import org.greenrobot.greendao.annotation.Convert;
 import org.greenrobot.greendao.annotation.Entity;

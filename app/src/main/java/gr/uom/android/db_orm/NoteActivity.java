@@ -1,4 +1,4 @@
-package gr.uom.android.lesson_10;
+package gr.uom.android.db_orm;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,10 +21,10 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 
-import gr.uom.android.lesson_10.model.DaoSession;
-import gr.uom.android.lesson_10.model.Note;
-import gr.uom.android.lesson_10.model.NoteDao;
-import gr.uom.android.lesson_10.model.NoteType;
+import gr.uom.android.db_orm.model.DaoSession;
+import gr.uom.android.db_orm.model.Note;
+import gr.uom.android.db_orm.model.NoteDao;
+import gr.uom.android.db_orm.model.NoteType;
 
 public class NoteActivity extends AppCompatActivity {
 

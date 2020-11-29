@@ -1,4 +1,4 @@
-package gr.uom.android.lesson_10;
+package gr.uom.android.db_orm;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import gr.uom.android.lesson_10.model.Note;
+import gr.uom.android.db_orm.model.Note;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHolder> {
 
