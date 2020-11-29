@@ -29,6 +29,7 @@ import gr.uom.android.lesson_10.model.NoteType;
 public class NoteActivity extends AppCompatActivity {
 
     private EditText editText;
+    private EditText editTextTextMultiLine;
     private View addNoteButton;
 
     private NoteDao noteDao;
@@ -73,6 +74,7 @@ public class NoteActivity extends AppCompatActivity {
         addNoteButton.setEnabled(false);
 
         editText = (EditText) findViewById(R.id.editTextNote);
+        editTextTextMultiLine = (EditText) findViewById(R.id.editTextTextMultiLine);
         editText.setOnEditorActionListener(new OnEditorActionListener() {
 
             @Override
@@ -108,14 +110,18 @@ public class NoteActivity extends AppCompatActivity {
 
     private void addNote() {
         String noteText = editText.getText().toString();
+        String noteDetail = editTextTextMultiLine.getText().toString();
         editText.setText("");
+        editTextTextMultiLine.setText("");
 
 
         String comment = "Added on " + df.format(new Date());
 
         Note note = new Note();
         note.setText(noteText);
+        note.setDetail(noteDetail);
         note.setComment(comment);
+
         note.setDate(new Date());
         note.setType(NoteType.TEXT);
         noteDao.insert(note);
