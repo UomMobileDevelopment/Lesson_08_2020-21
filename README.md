@@ -1,4 +1,4 @@
-# Lesson_10_2018-19
+# Lesson_08 2020-21
 Advanced Database topics.
 - reading and writing with ORM library
 - manipulating DB from Terminal
