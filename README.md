@@ -17,7 +17,9 @@ For the full story and a good example read [this SOF answer](https://stackoverfl
 
 # Program for offline SQLite DB manipulation
 
-## [SQLite Browser](https://sqlitebrowser.org)
+## [SQLite Browser - Needs installation](https://sqlitebrowser.org)
+
+## [Razor SQL - can be be used offline ](https://razorsql.com/download_win.html)
 
 
 ## Terminal DB manipulation
