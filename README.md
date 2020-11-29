@@ -1,6 +1,7 @@
-# Lesson_10_2018-19
-Advanced Database topics.
+# Lesson_08 2020-21
+Android Database topics.
 - reading and writing with ORM library
+- working with ORM and updating schema
 - manipulating DB from Terminal
 
 ## GreenDAO library 
@@ -14,6 +15,12 @@ An ORM library is a completely ordinary library written in your language of choi
 
 For the full story and a good example read [this SOF answer](https://stackoverflow.com/a/1279678/2956283)
 
+
+# Program for offline SQLite DB manipulation
+
+## [SQLite Browser - Needs installation](https://sqlitebrowser.org)
+
+## [Razor SQL - can be be used offline ](https://razorsql.com/download_win.html)
 
 
 ## Terminal DB manipulation
@@ -37,6 +44,8 @@ in the databases folder type ```ls -la ``` to get a list of the database files
 
 now type ```sqlite3 database-file-name.db``` to connect to the specified database. the prompt now is ```sqlite>```
 
-type: ```.schema``` to get a list of the tables. You can start typing normal SQL commands to create your own tables or query the existing ones
+type: ```.tables``` to get a list of the tables. 
+
+You can start typing normal SQL commands to create your own tables or query the existing ones
 
 
