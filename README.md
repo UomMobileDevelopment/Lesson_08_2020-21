@@ -1,6 +1,7 @@
 # Lesson_08 2020-21
-Advanced Database topics.
+Android Database topics.
 - reading and writing with ORM library
+- working with ORM and updating schema
 - manipulating DB from Terminal
 
 ## GreenDAO library 
