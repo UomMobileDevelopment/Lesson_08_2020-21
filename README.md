@@ -44,6 +44,8 @@ in the databases folder type ```ls -la ``` to get a list of the database files
 
 now type ```sqlite3 database-file-name.db``` to connect to the specified database. the prompt now is ```sqlite>```
 
-type: ```.schema``` to get a list of the tables. You can start typing normal SQL commands to create your own tables or query the existing ones
+type: ```.tables``` to get a list of the tables. 
+
+You can start typing normal SQL commands to create your own tables or query the existing ones
 
 
