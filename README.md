@@ -15,6 +15,10 @@ An ORM library is a completely ordinary library written in your language of choi
 For the full story and a good example read [this SOF answer](https://stackoverflow.com/a/1279678/2956283)
 
 
+# Program for offline SQLite DB manipulation
+
+## [SQLite Browser](https://sqlitebrowser.org)
+
 
 ## Terminal DB manipulation
 
